@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">myHearthstoneWorkshop</string>
+    <string name="main_title">Hearthstone</string>
+    <string name="news">Les dernières news</string>
+    <string name="decks">Mes decks</string>
+</resources>
