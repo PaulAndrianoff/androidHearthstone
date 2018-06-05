@@ -5,7 +5,6 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
-import android.widget.Toast
 import com.example.hp.myhearthstoneworkshop.R
 import com.example.hp.myhearthstoneworkshop.main.fastAdapter.NewsItem
 import com.mikepenz.fastadapter.commons.adapters.FastItemAdapter
@@ -14,8 +13,8 @@ import kotlinx.android.synthetic.main.activity_news.*
 
 class NewsActivity : AppCompatActivity() {
 
-    private val new1 = News("titre 1", "mon subtitle", "Blaize parle beaucoup trop avec les profs.")
-    private val news2 = News("titre 2", "mon super subtitle", "Octave à encore blamé Blaize.")
+    private val new1 = News("titre 1", "mon subtitle", "Blaize parle beaucoup trop avec les profs.", "deck", 2)
+    private val news2 = News("titre 2", "mon super subtitle", "Octave à encore blamé Blaize.", "deck", 3)
     private val listOfNews:Array<News> = arrayOf(new1, news2, new1, news2, new1, news2, new1, news2, new1, news2)
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,6 +22,16 @@ class NewsActivity : AppCompatActivity() {
         setContentView(R.layout.activity_news)
 
         displayNews(listOfNews)
+
+        newDeck.setOnClickListener {
+            val intent = Intent(this, HerroesClassActivity::class.java)
+            startActivity(intent)
+        }
+
+        myDecks.setOnClickListener {
+            val intent = Intent(this, DeckActivity::class.java)
+            startActivity(intent)
+        }
 
     }
 
@@ -33,7 +42,7 @@ class NewsActivity : AppCompatActivity() {
             monAdapter.add(item)
         }
 
-        recyclerView.adapter = monAdapter
+        newRecyclerView.adapter = monAdapter
 
         val monLinearLayoutManager = LinearLayoutManager(this,
                 LinearLayoutManager.VERTICAL,
@@ -42,13 +51,15 @@ class NewsActivity : AppCompatActivity() {
                 3,
                 GridLayoutManager.VERTICAL,
                 false) // THIS IS AN EXAMPLE
-        recyclerView.layoutManager = monLinearLayoutManager
+        newRecyclerView.layoutManager = monLinearLayoutManager
 
         monAdapter.withOnClickListener({ view, adapter, item, position ->
             val intent = Intent(this, NewsArticleActivity::class.java)
             intent.putExtra("title", item.news.title)
             intent.putExtra("subtitle", item.news.subtitle)
             intent.putExtra("content", item.news.content)
+            intent.putExtra("label", item.news.label)
+            intent.putExtra("imageId", item.news.imageId)
             startActivity(intent)
             return@withOnClickListener true
         })

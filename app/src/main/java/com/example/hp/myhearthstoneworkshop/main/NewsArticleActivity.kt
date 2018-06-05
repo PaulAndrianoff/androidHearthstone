@@ -16,5 +16,7 @@ class NewsArticleActivity : AppCompatActivity() {
         titleTextView.text = bundle.getString("title")
         subtitleTextView.text = bundle.getString("subtitle")
         contentTextView.text = bundle.getString("content")
+        labelView.text = bundle.getString("label")
+        imageView.setImageResource(imageArray[bundle.getInt("imageId", 0)])
     }
 }
