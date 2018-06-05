@@ -1,4 +1,4 @@
-package com.example.hp.myhearthstoneworkshop.main.model
+package com.example.hp.myhearthstoneworkshop.main
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle

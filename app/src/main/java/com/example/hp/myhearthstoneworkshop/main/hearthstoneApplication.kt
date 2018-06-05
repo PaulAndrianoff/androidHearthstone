@@ -1,4 +1,4 @@
-package com.example.hp.myhearthstoneworkshop.main.model
+package com.example.hp.myhearthstoneworkshop.main
 
 import android.app.Application
 import com.android.volley.RequestQueue

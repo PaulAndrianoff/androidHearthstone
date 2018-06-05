@@ -4,44 +4,100 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".main.model.HerroesClassActivity">
+    tools:context=".main.HerroesClassActivity">
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
-        android:text="@string/chooseClass"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageView
+        android:id="@+id/hunterButton"
+        android:layout_width="143dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/hunter"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/shamanButton"
         android:layout_width="143dp"
         android:layout_height="117dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
-        android:src="@drawable/hunter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/chaman"
+        app:layout_constraintStart_toEndOf="@+id/hunterButton"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chaman" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/mageButton"
         android:layout_width="143dp"
         android:layout_height="117dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
-        android:src="@drawable/hunter"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/mage"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/hunterButton"
+        app:srcCompat="@drawable/mage" />
+
+    <ImageView
+        android:id="@+id/druidButton"
+        android:layout_width="143dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/druid"
+        app:layout_constraintStart_toEndOf="@+id/mageButton"
+        app:layout_constraintTop_toBottomOf="@+id/shamanButton"
+        app:srcCompat="@drawable/druid" />
+
+    <ImageView
+        android:id="@+id/rogueButton"
+        android:layout_width="143dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rogue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mageButton"
+        app:srcCompat="@drawable/rogue" />
+
+    <ImageView
+        android:id="@+id/priestButton"
+        android:layout_width="143dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/priest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rogueButton"
+        app:srcCompat="@drawable/priest" />
+
+    <ImageView
+        android:id="@+id/demonButton"
+        android:layout_width="143dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/demon"
+        app:layout_constraintStart_toEndOf="@+id/rogueButton"
+        app:layout_constraintTop_toBottomOf="@+id/druidButton"
+        app:srcCompat="@drawable/demon" />
+
+    <ImageView
+        android:id="@+id/warriorButton"
+        android:layout_width="143dp"
+        android:layout_height="117dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/warrior"
+        app:layout_constraintStart_toEndOf="@+id/priestButton"
+        app:layout_constraintTop_toBottomOf="@+id/demonButton"
+        app:srcCompat="@drawable/warrior" />
 
 </android.support.constraint.ConstraintLayout>

@@ -4,5 +4,5 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 class CardSet {
-    var Basic: Card = Card()
+    var cards: Card = Card()
 }

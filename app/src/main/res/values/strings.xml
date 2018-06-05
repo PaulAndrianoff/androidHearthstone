@@ -2,5 +2,10 @@
     <string name="app_name">myHearthstoneWorkshop</string>
     <string name="main_title">Hearthstone</string>
     <string name="news">Les dernières news</string>
-    <string name="decks">Mes decks</string>
+    <string name="mesDecks">Mes decks</string>
+    <string name="newDeck">+ Créer un Deck</string>
+    <string name="deckCreation">Création de deck</string>
+    <string name="chooseClass">Choisit ta class</string>
+    <string name="mydeck">Mes decks</string>
+    <string name="defaultText">Mon text</string>
 </resources>

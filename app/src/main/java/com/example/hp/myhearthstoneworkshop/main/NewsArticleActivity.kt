@@ -1,8 +1,9 @@
-package com.example.hp.myhearthstoneworkshop.main.model
+package com.example.hp.myhearthstoneworkshop.main
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.example.hp.myhearthstoneworkshop.R
+import com.example.hp.myhearthstoneworkshop.main.model.imageArray
 import kotlinx.android.synthetic.main.activity_news_article.*
 
 class NewsArticleActivity : AppCompatActivity() {
@@ -17,6 +18,6 @@ class NewsArticleActivity : AppCompatActivity() {
         subtitleTextView.text = bundle.getString("subtitle")
         contentTextView.text = bundle.getString("content")
         labelView.text = bundle.getString("label")
-        imageView.setImageResource(imageArray[bundle.getInt("imageId", 0)])
+        druidButton.setImageResource(imageArray[bundle.getInt("imageId", 0)])
     }
 }

@@ -1,4 +1,4 @@
-package com.example.hp.myhearthstoneworkshop.main.model
+package com.example.hp.myhearthstoneworkshop.main
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
 import com.example.hp.myhearthstoneworkshop.R
 import com.example.hp.myhearthstoneworkshop.main.fastAdapter.NewsItem
+import com.example.hp.myhearthstoneworkshop.main.model.News
 import com.mikepenz.fastadapter.commons.adapters.FastItemAdapter
 import kotlinx.android.synthetic.main.activity_news.*
 
@@ -47,10 +48,6 @@ class NewsActivity : AppCompatActivity() {
         val monLinearLayoutManager = LinearLayoutManager(this,
                 LinearLayoutManager.VERTICAL,
                 false)
-        val gridLayoutManager = GridLayoutManager(this,
-                3,
-                GridLayoutManager.VERTICAL,
-                false) // THIS IS AN EXAMPLE
         newRecyclerView.layoutManager = monLinearLayoutManager
 
         monAdapter.withOnClickListener({ view, adapter, item, position ->
