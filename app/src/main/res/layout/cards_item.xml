@@ -6,12 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="50dp"
     android:layout_marginBottom="1dp"
+    android:animateLayoutChanges="true"
+    android:animationCache="true"
     android:background="@color/greenHunter"
     android:maxHeight="50dp">
 
     <TextView
         android:id="@+id/cardName"
-        android:layout_width="wrap_content "
+        android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_marginBottom="16dp"
         android:layout_marginStart="16dp"
@@ -30,7 +32,7 @@
         android:background="@android:color/holo_blue_dark"
         android:fontFamily="sans-serif-condensed"
         android:padding="8dp"
-        android:text="1"
+        android:text="@string/defaultCost"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
@@ -44,6 +46,7 @@
         android:id="@+id/druidButton"
         android:layout_width="82dp"
         android:layout_height="0dp"
+        android:contentDescription="@string/defaultText"
         android:scaleX="3"
         android:scaleY="3"
         android:translationX="0dp"

@@ -32,7 +32,7 @@ class CardsItemView (itemView: View?, color: String): FastAdapter.ViewHolder<Car
         val card = item?.news
         cardName?.setText(card?.name)
         manaCost?.setText(card?.cost.toString())
-       Picasso.get().load(card?.img).into(imageView)
+       Picasso.get().load(card?.img?: "http://media.services.zam.com/v1/media/byName/hs/cards/enus/AT_060.png").into(imageView)
         this.itemView.setBackgroundColor(Color.parseColor(this.currentColor))
     }
 

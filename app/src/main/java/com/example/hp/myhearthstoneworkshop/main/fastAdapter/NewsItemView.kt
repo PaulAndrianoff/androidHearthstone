@@ -26,10 +26,10 @@ class NewsItemView(itemView: View?): FastAdapter.ViewHolder<NewsItem>(itemView){
     }
 
     override fun bindView(item: NewsItem?, payloads: MutableList<Any>?) {
-        val contact = item?.news
-        titleTextView?.setText(contact?.title)
-        labelTextView?.setText(contact?.label)
-        imageView?.setImageResource(imageArray[contact?.imageId?: 0])
+        val news = item?.news
+        titleTextView?.setText(news?.title)
+        labelTextView?.setText(news?.label)
+        imageView?.setImageResource(imageArray[news?.imageId?: 0])
     }
 
 }

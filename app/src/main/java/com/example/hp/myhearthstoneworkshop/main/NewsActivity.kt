@@ -3,7 +3,6 @@ package com.example.hp.myhearthstoneworkshop.main
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
 import android.support.v7.widget.LinearLayoutManager
 import com.example.hp.myhearthstoneworkshop.R
 import com.example.hp.myhearthstoneworkshop.main.fastAdapter.NewsItem
@@ -38,8 +37,8 @@ class NewsActivity : AppCompatActivity() {
 
     fun displayNews(listOfNews: Array<News>) {
         val monAdapter = FastItemAdapter<NewsItem>()
-        for (contact: News in listOfNews) {
-            val item = NewsItem(contact)
+        for (news: News in listOfNews) {
+            val item = NewsItem(news)
             monAdapter.add(item)
         }
 

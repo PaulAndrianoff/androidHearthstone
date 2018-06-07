@@ -5,7 +5,11 @@
     <string name="mesDecks">Mes decks</string>
     <string name="newDeck">+ Créer un Deck</string>
     <string name="deckCreation">Création de deck</string>
-    <string name="chooseClass">Choisit ta class</string>
+    <string name="chooseClass">Choisis ta class</string>
     <string name="mydeck">Mes decks</string>
+    <string name="chooseName">Nom de mon deck</string>
+    <string name="neutral">Cartes neutres</string>
+    <string name="classCard">Cartes de class</string>
+    <string name="defaultCost">1</string>
     <string name="defaultText">Mon text</string>
 </resources>
